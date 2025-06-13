@@ -1,0 +1,59 @@
+@use 'variaveis';
+
+.sabores {
+
+    &__container {
+        text-align: center;
+        background: linear-gradient(to bottom, variaveis.$rosaForte, variaveis.$rosaFraco);
+        padding: 40px;
+
+        h2 {
+            font-family: variaveis.$fonteDosTitulos;
+            color: variaveis.$cianoForte;
+            font-size: 5em;
+        }
+
+        &__menu {
+
+            button {
+                padding: 10px 20px;
+                margin: 10px 10px 10px 0px;
+                border-radius: 6px;
+                font-size: 2.3em;
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+                color: variaveis.$cianoFraco;
+                text-decoration: underline;
+            }
+        }
+
+        &__listagem {
+            display: none;
+            padding: 0px;
+            margin: 0px;
+
+            li {
+                display: inline-block;
+                margin: 10px;
+
+                img {
+                    width: 500px;
+                    height: 500px;
+                    border-radius: 8px;
+                }
+            }
+
+            .list-text {
+                display: block;
+                font-size: 1.8em;
+                color: variaveis.$cianoFraco;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#destaque {
+    display: block;
+}

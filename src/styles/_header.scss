@@ -6,9 +6,9 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: variaveis.$cianoFraco;
+        background: linear-gradient(to left, variaveis.$backGroundColorHeader1, variaveis.$backGroundColorHeader2);
         width: 100vw;
-        padding: 22px;
+        padding: 40px;
 
         img {
             border-radius: 10px;
@@ -45,9 +45,9 @@
                     a {
                         text-decoration: none;
                         display: block;
-                        font-family: "Fredoka", sans-serif;
+                        font-family: variaveis.$fonteDosTitulos;
                         color: variaveis.$rosaForte;
-                        font-size: 2.4em;
+                        font-size: 3em;
                     }
                 }
             }

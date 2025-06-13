@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorveteria Giga Byte</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./build/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +18,7 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <img src="build/images/logo-giga.jpeg" alt="Logo da sorveteria">
+            <h1><img src="build/images/logo-giga.jpeg" alt="Logo da sorveteria"></h1>
 
             <nav class="header__container__nav">
                 <ul class="header__container__nav__item">
@@ -27,6 +29,68 @@
             </nav>
         </div>
     </header>
+
+
+    <section class="section">
+        <div class="section__carousel owl-carousel">
+            <div class="section__carousel__item">
+                <img src="./build/images/sorvete-casquinha.jpg" alt="Sorvete de casquinha">
+            </div>
+            <div class="section__carousel__item">
+                <img src="./build/images/milk-shake.jpg" alt="Milk Milk Shake">
+            </div>
+            <div class="section__carousel__item">
+                <img src="./build/images/chocolate-quente.jpg" alt="Chocolate quente">
+            </div>
+            <div class="section__carousel__item">
+                <img src="./build/images/taça-sorvete.jpg" alt="Taça de sorvete">
+            </div>
+        </div>
+    </section>
+
+    <section class="sabores">
+        <div class="sabores__container">
+            <h2>Sabores</h2>
+            <nav class="sabores__container__menu">
+                <button class="btn-menu active" data-target="#destaque">Destaques</button>
+                <button class="btn-menu" data-target="#variedades">Outras variedades</button>
+            </nav>
+
+            <ul class="sabores__container__listagem" id="destaque">
+                <li class="list-text">
+                    Descubra os sabores que conquistaram o coração dos nossos clientes! Feitos com ingredientes selecionados e receitas exclusivas, cada colherada é uma explosão de sabor e frescor
+                </li>
+                <li>
+                    <img src="./build/images/destaque1.jpg" alt="Sorvete na taça">
+                </li>
+                <li>
+                    <img src="./build/images/destaque2.jpg" alt="Fondue">
+                </li>
+                <li>
+                    <img src="./build/images/destaque3.jpg" alt="Sorvete na taça">
+                </li>
+            </ul>
+
+            <ul class="sabores__container__listagem" id="variedades">
+                <li class="list-text">
+                    Além dos nossos sabores mais pedidos, temos uma seleção especial que agrada todos os paladares
+                </li>
+                <li>
+                    <img src="./build/images/variedade1.jpg" alt="Potinho de fondue">
+                </li>
+                <li>
+                    <img src="./build/images/variedade2.jpg" alt="Barca de sorvete">
+                </li>
+                <li>
+                    <img src="./build/images/variedade3.jpg" alt="Sorvete na taça">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./build/scripts/main.js"></script>
 </body>
 
 </html>
