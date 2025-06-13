@@ -13,7 +13,7 @@ $('.owl-carousel').owlCarousel({
         }
     })
 
-    // Função do menu
+    // Função do menu de sabores
     $('.btn-menu').click(function(){
         $('.btn-menu').removeClass('active');
         $(this).addClass('active');

@@ -22,7 +22,7 @@
 
             <nav class="header__container__nav">
                 <ul class="header__container__nav__item">
-                    <li><a href="#">Sabores</a></li>
+                    <li><a href="#sabores">Sabores</a></li>
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Avaliações</a></li>
                 </ul>
@@ -48,9 +48,9 @@
         </div>
     </section>
 
-    <section class="sabores">
-        <div class="sabores__container">
-            <h2>Sabores</h2>
+    <div class="sabores__container">
+        <section class="sabores">
+            <h2 id="sabores">Sabores</h2>
             <nav class="sabores__container__menu">
                 <button class="btn-menu active" data-target="#destaque">Destaques</button>
                 <button class="btn-menu" data-target="#variedades">Outras variedades</button>
@@ -58,7 +58,8 @@
 
             <ul class="sabores__container__listagem" id="destaque">
                 <li class="list-text">
-                    Descubra os sabores que conquistaram o coração dos nossos clientes! Feitos com ingredientes selecionados e receitas exclusivas, cada colherada é uma explosão de sabor e frescor
+                    Descubra os sabores que conquistaram o coração dos nossos clientes! Feitos com ingredientes
+                    selecionados e receitas exclusivas, cada colherada é uma explosão de sabor e frescor
                 </li>
                 <li>
                     <img src="./build/images/destaque1.jpg" alt="Sorvete na taça">
@@ -85,7 +86,7 @@
                     <img src="./build/images/variedade3.jpg" alt="Sorvete na taça">
                 </li>
             </ul>
-        </div>
+    </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
