@@ -4,11 +4,11 @@
 
     &__container {
 
-        background: linear-gradient(to bottom, variaveis.$rosaFraco, variaveis.$cianoFraco);
+        background: linear-gradient(to bottom, variaveis.$rosaFraco, variaveis.$cianoForte);
 
         h2 {
             font-family: variaveis.$fonteDosTitulos;
-            color: variaveis.$rosaForte;
+            color: variaveis.$cianoForte;
             font-size: 5em;
             text-align: center;
             padding: 28px 0px;

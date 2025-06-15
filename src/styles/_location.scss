@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.localizacao {
+
+    &__container {
+        padding: 44px 0px;
+        background: linear-gradient(to bottom, variaveis.$cianoForte, variaveis.$cianoFraco);
+
+        h2 {
+            font-family: variaveis.$fonteDosTitulos;
+            color: variaveis.$rosaForte;
+            font-size: 5em;
+            text-align: center;
+        }
+
+        &__flex {
+            display: flex;
+            align-items: center;
+            max-width: 75%;
+            width: 100vw;
+            margin: 0px auto;
+            border: 3px solid #fff;
+            border-radius: 8px;
+
+            p {
+                text-indent: 18px;
+                font-size: 1.4em;
+                font-weight: bold;
+                padding: 12px;
+            }
+
+            iframe {
+                width: 400px;
+                height: 350px;
+            }
+        }
+    }
+}
