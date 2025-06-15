@@ -1,0 +1,66 @@
+@use 'variaveis';
+
+.about-us {
+
+    &__container {
+
+        background: linear-gradient(to bottom, variaveis.$rosaFraco, variaveis.$cianoFraco);
+
+        h2 {
+            font-family: variaveis.$fonteDosTitulos;
+            color: variaveis.$rosaForte;
+            font-size: 5em;
+            text-align: center;
+            padding: 28px 0px;
+        }
+
+        p {
+            text-indent: 18px;
+            font-size: 1.4em;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-family: variaveis.$fonteDosTitulos;
+            color: variaveis.$rosaForte;
+            font-size: 2.6em;
+            padding: 22px;
+        }
+
+        ul {
+
+            li {
+                font-size: 1.4em;
+                padding: 22px 100px;
+                font-weight: bold;
+                list-style: disc;
+            }
+        }
+
+        &__destaque {
+            width: 90%;
+            padding: 44px;
+            margin: 0px auto;
+
+            h3 {
+                text-align: center;
+            }
+            
+            &__flex {
+                display: flex;
+                align-items: center;
+                gap: 44px;
+
+                img {
+                    width: 400px;
+                    border-radius: 9px;
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}

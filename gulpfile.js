@@ -26,7 +26,7 @@ function stylesBuild() {
 
 // Tarefa de minificação de imagens
 function images() {
-    return gulp.src('./src/images/*')
+    return gulp.src('./src/images/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./build/images'))
 }
