@@ -1,10 +1,11 @@
 @use 'variaveis';
 
-.localizacao {
+.espaco-kids {
 
+    
     &__container {
         padding: 44px 0px;
-        background: linear-gradient(to bottom, variaveis.$cianoFraco, variaveis.$rosaFraco);
+        background: linear-gradient(to bottom, variaveis.$cianoForte, variaveis.$cianoFraco);
 
         h2 {
             font-family: variaveis.$fonteDosTitulos;
@@ -12,15 +13,14 @@
             font-size: 5em;
             text-align: center;
         }
-
-        &__flex {
+        
+        &__item {
             display: flex;
             align-items: center;
-            max-width: 75%;
-            width: 100vw;
+            justify-content: space-around;
+            gap: 20px;
+            width: 90%;
             margin: 0px auto;
-            border: 3px solid #fff;
-            border-radius: 8px;
 
             p {
                 text-indent: 18px;
@@ -29,9 +29,9 @@
                 padding: 12px;
             }
 
-            iframe {
+            img {
                 width: 400px;
-                height: 350px;
+                border-radius: 9px;
             }
         }
     }
