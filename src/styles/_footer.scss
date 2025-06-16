@@ -1,34 +1,97 @@
 @use 'variaveis';
 
 .footer {
+    background-color: #111;
+    color: #f2f2f2;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
 
     &__container {
-        background: linear-gradient(to bottom, variaveis.$rosaFraco, variaveis.$rosaForte);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-        &__grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
+    &__info {
+        flex: 1;
+        min-width: 250px;
 
-            &__item {
-                
+        & p {
+            margin: 0.5rem 0;
+        }
 
-                img {
-                    width: 200px;
-                }
+        & a {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+    }
 
-                p {
+    &__logo {
 
-                }
+        & img {
+            width: 180px;
+        }
+    }
 
-                & a {
+    &__award {
+        margin-top: 1rem;
+        color: #ffc107;
+        font-weight: bold;
+    }
+
+    &__links {
+        flex: 1;
+        min-width: 250px;
+
+        h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1rem;
+
+            li {
+                margin: 0.3rem 0;
+
+                a {
+                    color: #f2f2f2;
                     text-decoration: none;
 
-                    & img {
-                        width: 30px;
+                    &:hover {
+                        text-decoration: underline;
                     }
                 }
             }
         }
+    }
+
+    &__social {
+        display: flex;
+        gap: 0.8rem;
+
+        a {
+            color: #f2f2f2;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover {
+                color: #ffc107;
+            }
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        border-top: 1px solid #333;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        font-size: 0.9rem;
+        color: #bbb;
     }
 }
