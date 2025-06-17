@@ -17,7 +17,7 @@
         p {
             text-indent: 18px;
             font-size: 1.4em;
-            padding: 12px;
+            padding: 12px 28px;
             font-weight: bold;
         }
 
@@ -63,6 +63,25 @@
 
                 p {
                     font-size: 1.2em;
+                }
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            h2 {
+                font-size: 4em;
+            }
+
+            &__destaque {
+
+                &__flex {
+
+                    display: block;
+                    text-align: center;
+
+                    img {
+                        margin: 18px 0px;
+                    }
                 }
             }
         }

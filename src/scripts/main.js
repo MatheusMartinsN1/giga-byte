@@ -25,5 +25,6 @@ $('.owl-carousel').owlCarousel({
     // Função do Menu Hamburguer
     $('#menu-toggle').click(function(){
         $('.header__container').toggleClass('open');
+        $('.header__container__nav').stop().slideToggle(300);
     })
 })

@@ -2,7 +2,7 @@
 
 .espaco-kids {
 
-    
+
     &__container {
         padding: 44px 0px;
         background: linear-gradient(to bottom, variaveis.$cianoForte, variaveis.$cianoFraco);
@@ -14,7 +14,7 @@
             text-align: center;
             margin: 20px 0px;
         }
-        
+
         &__item {
             display: flex;
             align-items: center;
@@ -33,6 +33,18 @@
             img {
                 width: 400px;
                 border-radius: 9px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+
+            &__item {
+                display: block;
+                text-align: center;
+
+                img {
+                    margin: 18px 0px;
+                }
             }
         }
     }
