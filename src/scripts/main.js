@@ -21,4 +21,9 @@ $('.owl-carousel').owlCarousel({
         let target = $(this).data('target');
         $(target).fadeIn();
     })
+
+    // Função do Menu Hamburguer
+    $('#menu-toggle').click(function(){
+        $('.header__container').toggleClass('open');
+    })
 })
