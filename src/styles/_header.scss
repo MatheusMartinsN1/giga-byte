@@ -24,10 +24,6 @@
             }
         }
 
-        img {
-            border-radius: 10px;
-        }
-
         h1 {
 
             img {
@@ -88,6 +84,7 @@
             }
         }
 
+        // Responsividade do Tablet
         @media (min-width: 768px) and (max-width: 1024px) {
 
             .menu-toggle {
@@ -101,7 +98,7 @@
                 width: 100%;
                 display: none;
 
-                ul {
+                &__item {
 
                     li {
                         border-bottom: 3px solid variaveis.$rosaForte;
@@ -112,7 +109,53 @@
 
                         a {
                             display: block;
-                            padding: 1rem;
+                            padding: 1em;
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Responsividade do Mobile
+        @media (max-width: 767px) {
+            height: 200px;
+            padding: 20px;
+            
+
+            h1 {
+
+                img {
+                    width: 150px;
+                }
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            &__nav {
+                position: absolute;
+                top: 18%;
+                left: 0;
+                width: 100%;
+                display: none;
+
+                &__item {
+                    margin: 10px 0px;
+                    display: block;
+                    text-align: center;
+
+                    li {
+                        border-bottom: 3px solid variaveis.$rosaForte;
+                        padding: 4px 0px;
+
+                        &::after {
+                            content: none;
+                        }
+
+                        a {
+                            display: block;
                             font-size: 1em;
                         }
                     }

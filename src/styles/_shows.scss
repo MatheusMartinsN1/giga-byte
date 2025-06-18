@@ -38,6 +38,7 @@
             padding: 0px;
             margin: 0px;
             max-width: 100%;
+            grid-template-columns: repeat(3, 1fr);
 
             li {
                 display: inline-block;
@@ -48,6 +49,7 @@
                     height: 400px;
                     border-radius: 8px;
 
+                    // Responsividade do Tablet
                     @media (min-width: 768px) and (max-width: 1024px) {
                         width: 200px;
                         height: 200px;
@@ -58,6 +60,39 @@
             .list-text {
                 display: block;
                 font-size: 1.4em;
+                font-weight: bold;
+            }
+        }
+
+        // Responsividade do Mobile
+        @media (max-width: 767px) {
+
+            h2 {
+                font-size: 3em;
+            }
+
+            &__menu {
+                display: flex;
+
+                button {
+                    font-size: 1.2em;
+                }
+            }
+
+            &__listagem {
+
+                li {
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+
+            .list-text {
+                display: block;
+                font-size: 1em;
                 font-weight: bold;
             }
         }

@@ -2,10 +2,10 @@
 
 .espaco-kids {
 
-
     &__container {
         padding: 44px 0px;
         background: linear-gradient(to bottom, variaveis.$cianoForte, variaveis.$cianoFraco);
+
 
         h2 {
             font-family: variaveis.$fonteDosTitulos;
@@ -36,6 +36,7 @@
             }
         }
 
+        // Responsividade do Tablet
         @media (min-width: 768px) and (max-width: 1024px) {
 
             &__item {
@@ -44,6 +45,28 @@
 
                 img {
                     margin: 18px 0px;
+                }
+            }
+        }
+
+        // Responsividade do Mobile
+        @media (max-width: 767px) {
+
+            h2 {
+                font-size: 3em;
+            }
+
+            &__item {
+                display: block;
+                text-align: center;
+
+                img {
+                    width: 300px;
+                }
+
+                p {
+                    padding: 16px 0px;
+                    font-size: 1em;
                 }
             }
         }

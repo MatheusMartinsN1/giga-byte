@@ -36,6 +36,7 @@
             }
         }
 
+        // Responsividade do Tablet
         @media (min-width: 768px) and (max-width: 1024px) {
 
             &__flex {
@@ -44,6 +45,27 @@
                 iframe {
                     width: 100%;
                     margin-bottom: 18px ;
+                }
+            }
+        }
+
+        // Responsividade do Mobile
+        @media (max-width: 767px) {
+
+            h2 {
+                font-size: 3em;
+            }
+
+            &__flex {
+                display: block;
+
+                iframe {
+                    width: 100%;
+                }
+
+                p {
+                    padding: 16px 10px;
+                    font-size: 1em;
                 }
             }
         }

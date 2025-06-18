@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
     // Função do carousel
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    autoplay: true,
-    dots: false,
-    autoplayTimeout: 3000,
-    responsive: {
-        0: { items: 1 },
-        600: { items: 2 },
-        1000: { items: 3 }
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        dots: false,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
         }
     })
 
@@ -23,7 +23,7 @@ $('.owl-carousel').owlCarousel({
     })
 
     // Função do Menu Hamburguer
-    $('#menu-toggle').click(function(){
+    $('#menu-toggle').click(function () {
         $('.header__container').toggleClass('open');
         $('.header__container__nav').stop().slideToggle(300);
     })
